@@ -1,0 +1,99 @@
+body{
+    font-family: "Tahoma";
+    color:  #3b5998;
+}
+header {
+    display:flex;
+    justify-content: flex-end;
+    margin: 50px 100px;
+}
+.home {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#profile{
+    width: 35%;
+    margin: 30px 100px;
+}
+
+#pic{
+    width:65%;
+    height: 300px;
+    margin: 0px 100px;
+}
+
+.button {
+    background-color: #d8e4ef;
+    margin: 2px 5px;
+    padding: 8px 15px;
+    text-align: center;
+  }
+
+input,[type=text], [type=email]{
+    padding: 2px 2px;
+    margin: 8px 0px;
+    background-color: #d8e4ef;
+    border-bottom:2px solid #3b5998;
+}
+
+label {
+    font-family: Tahoma, sans-serif;
+    color: #3b5998
+}
+
+input[type=radio] + label {
+    color: #3b5998;
+    width: 20px;
+    padding-left: 5px;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: #3b5998;
+    color: #d8e4ef;
+    padding: 5px;;
+}
+
+.container1{
+    width: 500px;
+    height: 370px;
+    margin: 100px 0px;
+    padding-left: 250px;
+    padding-top: 15px;
+    background-color: #d8e4ef;
+}
+
+/*animation code*/
+@keyframes example {
+    from {background-color:#3b5998;}
+    to {background-color: grey;}
+}
+ 
+textarea {
+    border:2px solid #3b5998;
+    width: 200px;
+    height: 80px;
+    font-family: tahoma, sans-serif;
+    font-size: 12px;
+    color: #d8e4ef;
+    position: relative;
+    background-color: #3b5998;
+    animation-name: example;
+    animation-duration: 4s;
+ 
+    /*delay animation*/
+    animation-delay: 1s;
+ 
+    /*loop animation amount*/
+    animation-iteration-count: 2;
+ 
+    /*play animation backwards*/
+    animation-direction: reverse;
+ 
+    /*play animation at same speed throughout */
+    animation-timing-function: ease-in-out;
+ 
+    /*if animation is not available, display end state*/
+    animation-fill-mode: forwards;
+}
